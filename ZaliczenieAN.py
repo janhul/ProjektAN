@@ -186,7 +186,7 @@ def porownanie_interpolacji():
     wypelnianieMacierzyY()
 
     K = np.linalg.solve(X,Y)
-    
+    print(K)
     x_values = np.linspace(np.min(x_chosen), np.max(x_chosen), 1000)
     interpolated_values = []
     for x in x_values:       # obliczanie wartosci interpolowanej dla kazdego punktu x, ze wzoru na interpolacje kubiczna
